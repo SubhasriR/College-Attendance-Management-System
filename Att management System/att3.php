@@ -66,7 +66,7 @@ th {
 <center>
 
 <?php
-$con=mysqli_connect('localhost','root','Subhasri47');
+$con=mysqli_connect('localhost','username','password');
 mysqli_select_db($con,'student');
 $absentees=array();
 $absentees=$_SESSION['new'];
