@@ -2,7 +2,7 @@
 
 session_start();
 
-$con=mysqli_connect('localhost','root','Subhasri47');
+$con=mysqli_connect('localhost','username','password');
 mysqli_select_db($con,'student');
 $sql1="SELECT tusername,tpassword FROM teacher_login";
 $exe1=mysqli_query($con,$sql1);
