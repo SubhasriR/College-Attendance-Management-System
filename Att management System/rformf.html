@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>faculty registration</title>
+<link rel="stylesheet" type="text/css" href="stf.css">
+
+<style type="text/css">
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: 50px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<header style="padding-left: 400px"><img src="header_inside.jpg"></header>
+
+<ul>
+  <li><a href="index1.html">Home</a></li>
+  <li><a href="sloginf.php">Student Login</a></li>
+  <li><a href="loginf.php">Faculty Login</a></li>
+  <li><a class="active" href="rformf.html">Faculty Registration</a></li>
+</ul>
+
+<div id="sss" align="center">
+<form action="insert.php"method="post">
+<table border="0" align="center">
+<caption><b><font size="6" >Registration</font></b></caption>
+<tr><td>&nbsp </td> <td>&nbsp </td></tr>
+<tr><td>&nbsp </td> <td>&nbsp </td></tr>
+
+<tr>
+<td><b>Id</b></td><td><input type="text" name="tid"></td>
+</tr>
+
+<tr>
+<td><b>Name</b></td>
+<td><input type="text" name="tname" id="myname" onblur="validname()"></td>
+<td><p id="namef"></p></td>
+<td><p id="vname" style="font-size: 18px; display: inline; color: white;"></p></td>
+</tr>
+
+<tr>
+<td><b>Username</b></td><td><input type="text" name="tusername" id="uname" onblur="validuname()"></td>
+<td><p id="namef"></p></td>
+<td><p id="vuname" style="font-size: 18px; display: inline; color: white;"></p></td>
+</tr>
+
+<tr>
+<td><b>Password</b></td><td><input type="password" name="tpassword" id="pword" onblur="validpword()"></td>
+</td><td><p id="namef"></p></td>
+<td><p id="vpword" style="font-size: 18px; display: inline; color: white;"></p></td>
+</tr>
+
+<tr>
+<td><b>Date Of Birth</b></td> <td><input type="date" name="tdob"></td>
+</tr>
+
+<tr>
+<td><b>Phone no.</b></td><td><input type="text" name="tphnno" id="phno" onblur="validphno()"></td>
+<td><p id="namef"></p></td>
+<td><p id="vphno" style="font-size: 18px; display: inline; color: white;"></p></td>
+</tr>
+
+
+<tr>
+<td><b>Email-Id</b></td><td><input type="text" name="temail" id="email" onblur="validemail()"></td>
+<td><p id="namef"></p></td>
+<td><p id="vemail" style="font-size: 18px; display: inline; color: white;"></p></td>
+</tr>
+
+<tr>
+<td align="center" colspan="3"><input type="submit" value="submit"></td>
+</tr>
+</table>
+</form>
+</div>
+
+<script>
+function validname()
+{
+	var mn=document.getElementById("myname").value;
+		    var actualname=/^[a-zA-Z]+$/;
+		    if(!actualname.test(mn))   {  var hp1=document.getElementById("vname");
+		    hp1.style.color="red";  
+		    	document.getElementById("vname").innerHTML="Invalid name.";     }
+}
+function validuname()
+{
+	var un=document.getElementById("uname").value;
+			var actualuname=/^[a-zA-Z]+[a-zA-Z0-9]/;
+			if(!actualuname.test(un)){
+			var hp1=document.getElementById("vuname");
+		    hp1.style.color="red";  
+				document.getElementById("vuname").innerHTML="Invalid username.";       }
+			else
+			{
+				document.getElementById("vuname").innerHTML="";
+			}
+
+}
+function validpword()
+{
+	var pw=document.getElementById("vpword").value;
+	var actualpword=/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))/;
+				if(!actualpword.test(pword))
+				{
+					document.getElementById("vpword").innerHTML="Password too weak!";
+				}
+				else
+			{
+				document.getElementById("vpword").innerHTML="";
+			}
+}
+function validemail()
+{
+	var em=document.getElementById("email").value;
+	var actualem=/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+							if(!actualem.test(em))
+							{
+								var hp1=document.getElementById("vemail");
+		    hp1.style.color="red";  
+								document.getElementById("vemail").innerHTML="Invalid email";
+							}
+							else
+							{
+								document.getElementById("vemail").innerHTML="";
+							}
+}
+function validphno()
+{
+	var pn=document.getElementById("phno").value;
+	var actualpn=/^[0-9]{10}$/;
+							if(!actualpn.test(pn))
+							{
+								var hp1=document.getElementById("vphno");
+		    hp1.style.color="red";  
+								document.getElementById("vphno").innerHTML="Invalid phone number";
+							}
+							else {document.getElementById("vphno").innerHTML="";}
+}
+</script>
+
+</body>
+</html>

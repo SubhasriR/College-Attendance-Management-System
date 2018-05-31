@@ -1,0 +1,73 @@
+#sss
+{
+text-align: center;
+    float:center;
+    top:150px;
+    right:470px;
+    left:500px;
+    background-color:#dddddd;
+    height:610px;
+    width:500px;
+    position:absolute;
+    overflow:hidden;
+    padding-top: 15px;
+    border-radius: 15px;
+	}
+	
+	input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+input[type=password], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+#nnn
+{
+text-align: center;
+    float:center;
+    top:100px;
+    right:490px;
+    left:470px;
+    background-color:#ffffff;
+    height:400px;
+    width:400px;
+    position:absolute;
+    overflow:hidden;
+	padding:30px,30px,50px,80px;
+	}

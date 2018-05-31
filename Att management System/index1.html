@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 50px;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #08088A;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: block;
+  margin: auto;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+<!--nav bAR-->
+  <header style="padding-left: 400px"><img src="header_inside.jpg"></header>
+
+<ul>
+  <li><a class="active" href="index1.html">Home</a></li>
+  <li><a href="sloginf.php">Student Login</a></li>
+  <li><a href="loginf.php">Faculty Login</a></li>
+  <li><a href="rformf.html">Faculty Registration</a></li>
+</ul>
+
+
+<a href="sloginf.php"><button class="button" style="vertical-align:middle;margin-top: 150px;"><span>Student Login</span></button></a><br>
+<a href="loginf.php"><button class="button" style="vertical-align:middle"><span>Faculty Login </span></button></a><br>
+<a href="rformf.html"><button class="button" style="vertical-align:middle;"><span> Faculty Registration </span></button></a><br>
+</body>
+</html>
