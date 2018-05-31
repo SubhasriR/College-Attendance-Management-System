@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost','root','Subhasri47');
+$con = mysqli_connect('localhost','username','password');
 if(!$con)
 {
 echo 'not connected to server';
@@ -16,7 +16,7 @@ $password=$_POST['tpassword'];
 $dob=$_POST['tdob'];
 $phnno=$_POST['tphnno'];
 $email=$_POST['temail'];
-if($id=='18CBIT-CSE')
+if($id=='ID18')
 {
 $sql1="INSERT INTO teacher_login(tid,tname,tusername,tpassword) VALUES ('$id','$name','$username','$password')";
 $sql2="INSERT INTO teacher_logininfo(tid,tname,tusername,tpassword,tdob,tphnno,temail) VALUES ('$id','$name','$username','$password','$dob','$phnno','$email')";
