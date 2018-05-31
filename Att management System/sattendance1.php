@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$con=mysqli_connect('localhost','root','Subhasri47');
+$con=mysqli_connect('localhost','username','password');
 mysqli_select_db($con,'student');
 $test_uname=$_SESSION['name'];
 $test_pword=$_SESSION['pword'];
