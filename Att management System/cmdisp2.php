@@ -70,7 +70,7 @@ th {
 	<th rowspan="4">S.No</th>
 	<th rowspan="4">HT.No</th>
 <?php
-	$con=mysqli_connect('localhost','root','Subhasri47');
+	$con=mysqli_connect('localhost','username','password');
 	mysqli_select_db($con,'student');
 	$tid=$_POST['tid'];
 	$date=$_POST['date1'];
