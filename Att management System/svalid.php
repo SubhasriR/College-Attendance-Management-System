@@ -1,6 +1,6 @@
 <?php 
 session_start();	
-$con=mysqli_connect('localhost','root','Subhasri47');
+$con=mysqli_connect('localhost','username','password');
 mysqli_select_db($con,'student');
 $sql1="SELECT ht_no,spassword FROM student_login";
 $exe1=mysqli_query($con,$sql1);
