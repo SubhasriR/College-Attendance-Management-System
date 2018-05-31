@@ -128,15 +128,7 @@ echo "WELCOME!" .$_SESSION['uname'];
 				Subject: <select name="subject">
 				    <option value="wt">Web Technologies</option>
 				    <option value="dbms">Database Management Systems</option>
-				    <option value="camp">Computer Architecture and Microprocessors</option>
-				    <option value="p&s">Probability and Statistics using R</option>
-				    <option value="eco">Engineering Economics and Accountancy</option>
-				    <option value="wt_lab">Web Technologies Lab</option>
-				    <option value="dbms_lab">Database Management Systems Lab</option>
-				    <option value="camp_lab">Computer Architecture and Microprocessors Lab</option>
-				    <option>Linux Programming and Scripting Languages</option>
-				    <option>Principles of Programming Language</option>
-				    <option>Shell Scripting</option>		    
+				    //add subjects required		    
 			    </select>
 			</td>
 			<td>
